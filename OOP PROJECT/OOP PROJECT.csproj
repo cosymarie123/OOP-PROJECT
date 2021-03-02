@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B358A3F8-769C-4436-BF7F-98CCF75CD566}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OOP_PROJECT</RootNamespace>
+    <AssemblyName>OOP PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasePage.Designer.cs">
+      <DependentUpon>BasePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuCombo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuCombo.Designer.cs">
+      <DependentUpon>menuCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearnMore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearnMore.Designer.cs">
+      <DependentUpon>LearnMore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuDesserts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuDesserts.Designer.cs">
+      <DependentUpon>menuDesserts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuChicken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuChicken.Designer.cs">
+      <DependentUpon>menuChicken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dish.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFormatting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFormatting.Designer.cs">
+      <DependentUpon>FormFormatting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuBurger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuBurger.Designer.cs">
+      <DependentUpon>menuBurger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuDrinks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuDrinks.Designer.cs">
+      <DependentUpon>menuDrinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuMexican.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuMexican.Designer.cs">
+      <DependentUpon>menuMexican.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuSalads.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuSalads.Designer.cs">
+      <DependentUpon>menuSalads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuViet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuViet.Designer.cs">
+      <DependentUpon>menuViet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="menuOriginals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuOriginals.Designer.cs">
+      <DependentUpon>menuOriginals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuSnacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuSnacks.Designer.cs">
+      <DependentUpon>menuSnacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuSpecials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuSpecials.Designer.cs">
+      <DependentUpon>menuSpecials.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BasePage.resx">
+      <DependentUpon>BasePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearnMore.resx">
+      <DependentUpon>LearnMore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuBurger.resx">
+      <DependentUpon>menuBurger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuChicken.resx">
+      <DependentUpon>menuChicken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuDesserts.resx">
+      <DependentUpon>menuDesserts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuDrinks.resx">
+      <DependentUpon>menuDrinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuMexican.resx">
+      <DependentUpon>menuMexican.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuOriginals.resx">
+      <DependentUpon>menuOriginals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuSalads.resx">
+      <DependentUpon>menuSalads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuSnacks.resx">
+      <DependentUpon>menuSnacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuSpecials.resx">
+      <DependentUpon>menuSpecials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuViet.resx">
+      <DependentUpon>menuViet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Order.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2016_09_29_12990_1475116504._large.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast-food-industry-trends-basket.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negative-space-woman-eating-dinner-thumb-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\five-milkshakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\junk-food.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palm coast lance-asper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman-eating-dinner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add shopping cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear shopping cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food-of-all-kinds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dishes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desserts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drinks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salads.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snacks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mexican.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pnlRedChristmas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pnlRedWednesday.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\originals.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\special.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple Kiwi Fruit Tea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple Slices.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bacon Maple Chicken Sandwich.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bacon Smokehouse Burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Big Mac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Forest Ham.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bun Bo Hue.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bun Cha.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buttermilk Crispy Tenders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cheese Chicken.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicken and Bacon Ranch.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chilaquiles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chocolate Chip Cookies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chocolate Lava Pudding.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CocaCola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Creamy pasta salad.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dark Chocolate Mousse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diet Coke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double Quarter Pounder with Cheese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double Stack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dr Pepper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enchiladas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fried chicken.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fruit and Maple Oatmeal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fruit and Yogurt Parfait.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fruit salad with coconut milk.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Salad.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Harvest Chicken Salad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hot Fudge Sundae.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotcakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iced Tea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jr Cheeseburger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kids Cheeseburger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kids Chicken Wrap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mushroom and Swiss Burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pear Berry Fruit Tea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pizza Pinwheels.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pozole.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salad egg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Side Salad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Southwest Buttermilk Crispy Chicken Salad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strawberry and Creme Pie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strawberry Shake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sweet N Spicy Honey BBQ Glazed Tenders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tacos Al Pastor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tamales.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomato and Herb Salad With Goats.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vanilla Cone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Veggie Delite.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\World Famous Fries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yoplait GO GURT Low Fat Strawberry Yogurt.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

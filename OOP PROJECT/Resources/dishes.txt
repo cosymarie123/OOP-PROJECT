@@ -1,0 +1,4 @@
+name	menu	course	preptime	calories	description	allergens	price	image
+pizza	burger	entree	30	200	tasty	"milk,wheat,sugar"	80000	C:/Users/sony/source/repos/OOP PROJECT/Images for OOP/five-milkshakes.jpg
+pineapple pizza	burger	entree	45	300	spicy	"milk,wheat"	80000	C:/Users/sony/source/repos/OOP PROJECT/Images for OOP/junk-food.jpg
+macaroni	burger	entree	45	250	sweet	"milk,wheat"	80000	C:/Users/sony/source/repos/OOP PROJECT/Images for OOP/beach.jpg
